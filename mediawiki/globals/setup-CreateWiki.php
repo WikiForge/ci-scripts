@@ -1,7 +1,6 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
-use Wikimedia\Rdbms\Database;
 use Wikimedia\Rdbms\DBQueryError;
 
 $wgWikimediaJenkinsCI = true;
