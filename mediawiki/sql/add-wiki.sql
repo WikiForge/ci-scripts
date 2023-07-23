@@ -1,4 +1,4 @@
-INSERT INTO cw_wikis (
+INSERT IGNORE INTO cw_wikis (
     wiki_dbname,
     wiki_dbcluster,
     wiki_sitename,
@@ -18,7 +18,7 @@ INSERT INTO cw_wikis (
     'TestWiki',
     'en',
     0,
-    UNIX_TIMESTAMP(),
+    DATE_FORMAT( FROM_UNIXTIME( UNIX_TIMESTAMP() ), '%Y%m%d%H%i%s' ),
     'uncategorized',
     0,
     0,
